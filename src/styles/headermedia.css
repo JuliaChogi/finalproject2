@@ -1,0 +1,115 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    .burger {
+        display: block;
+    }
+
+    .burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav_list {
+        max-width: 320px;
+        z-index: 3;
+        position: fixed;
+        left: -100%;
+        top: 3.5rem;
+        gap: 0px;
+
+        flex-direction: column;
+        
+
+        text-align: center;
+        background-color: #ffffff;
+        transition: .5s;
+
+        padding: 5%;
+    }
+    .nav_list.active {
+        left: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .burger {
+        display: block;
+    }
+
+    .burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav_list {
+        z-index: 3;
+        position: fixed;
+        left: -100%;
+        top: 3.5rem;
+        gap: 10px;
+
+        flex-direction: column;
+        width: 100%;
+
+        text-align: center;
+        background-color: #ffffff;
+        transition: .5s;
+
+        padding: 5%;
+    }
+    .nav_list.active {
+        left: 0;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .burger {
+        display: block;
+    }
+
+    .burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav_list {
+        z-index: 3;
+        position: fixed;
+        left: -100%;
+        top: 3.5rem;
+        gap: 10px;
+
+        flex-direction: column;
+        width: 100%;
+
+        text-align: center;
+        background-color: #ffffff;
+        transition: .5s;
+
+        padding: 5%;
+    }
+    .nav_list.active {
+        left: 0;
+    }
+}

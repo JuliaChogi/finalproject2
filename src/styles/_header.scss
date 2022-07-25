@@ -1,0 +1,99 @@
+.header {
+    background-color: #ffffff;
+    min-height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    &_text {
+        font-weight: bold;
+    }
+}
+
+.navigation__list {
+    padding-left: 4rem;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+ul {
+    list-style: none;
+}
+.nav_list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navigation__lists {
+    display: flex;
+}
+
+a {
+    transition: all .5s;
+}
+.navigation__link {
+    text-decoration: none;
+    color: $colorgrey;
+    font-weight: 700;
+}
+
+.navigation__link:hover {
+    color: $colorblue;
+}
+
+.nav__contacts {
+    display: flex;
+    gap: 1rem;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 1.7rem;
+    height: 0.2rem;
+    margin: 5px auto;
+    z-index: 90;
+
+    
+
+    background-color: $colorblue;
+
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.subscription_item {
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.subscription_item a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.subscription_item a:hover {
+    background-color: rgb(117, 43, 43);
+}
+
+.dropdown:hover .subscription_item {
+    display: block;
+}
