@@ -62,7 +62,11 @@ h1 {
 
 .header {
   background-color: #ffffff;
-  min-height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  height: 4rem;
 }
 
 .logo {
@@ -73,8 +77,66 @@ h1 {
   font-weight: bold;
 }
 
-.navigation__list {
-  padding-left: 4rem;
+.nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link {
+  color: #171717;
+  font-weight: 600;
+  line-height: 150%;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #1749B3;
+}
+
+.dropdown.active > .link,
+.link:hover {
+  color: #1749B3;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 1rem);
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .header_wrapper {
@@ -82,32 +144,8 @@ h1 {
   justify-content: space-around;
 }
 
-ul {
-  list-style: none;
-}
-
-.nav_list {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.navigation__lists {
-  display: flex;
-}
-
 a {
   transition: all 0.5s;
-}
-
-.navigation__link {
-  text-decoration: none;
-  color: #333333;
-  font-weight: 700;
-}
-
-.navigation__link:hover {
-  color: #1749B3;
 }
 
 .nav__contacts {
@@ -128,34 +166,6 @@ a {
   z-index: 90;
   background-color: #1749B3;
   transition: all 0.3s ease-in-out;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.subscription_item {
-  display: none;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.subscription_item a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.subscription_item a:hover {
-  background-color: rgb(117, 43, 43);
-}
-
-.dropdown:hover .subscription_item {
-  display: block;
 }
 
 .container1 {

@@ -145,14 +145,12 @@
         flex-direction: column;
         margin: 5%;
         width: auto;
-
     }
 
     details {
         border-radius: 12px;
         margin-top: 1rem;
         height: auto;
-
     }
 
     details summary {
@@ -226,14 +224,12 @@
         display: flex;
         flex-direction: column;
         width: auto;
-
     }
 
     .btn__white {
         align-self: center;
         height: 3rem;
         width: 90%;
-
     }
 
     .container2 {
@@ -357,14 +353,12 @@
         flex-direction: column;
         margin: 5%;
         width: auto;
-
     }
 
     details {
         border-radius: 12px;
         margin-top: 1rem;
         height: auto;
-
     }
 
     details summary {
@@ -415,8 +409,6 @@
 @media (min-width: 768px) and (max-width: 1200px) {
     .container {
         width: 90%;
-        /* margin-top: 5%; */
-        /* margin: 0 auto; */
     }
 
     .container1 {
@@ -513,13 +505,11 @@
         flex-direction: column;
         margin: 5%;
         width: auto;
-
     }
 
     details {
         border-radius: 24px;
         height: auto;
-
     }
 
     details summary {
